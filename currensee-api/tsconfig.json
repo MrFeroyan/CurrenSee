@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "target": "ES2022",
+        "lib": ["esnext"],
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "baseUrl": ".",
+        "outDir": "build",
+        "resolveJsonModule": true,
+        "typeRoots": [
+            "./@types",
+            "./node_modules/@types",
+        ],
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "noFallthroughCasesInSwitch": true,
+        "paths": {
+            "@config/*": ["src/config/*"],
+            "@constants/*": ["src/constants/*"],
+            "@controllers/*": ["src/controllers/*"],
+            "@db/*": ["src/db/*"],
+            "@middlewares/*": ["src/middlewares/*"],
+            "@providers/*": ["src/providers/*"],
+            "@routes/*": ["src/routes/*"],
+            "@schemas/*": ["src/schemas/*"],
+            "@utils/*": ["src/utils/*"],
+          }
+    },
+    "include": ["src"]
+}

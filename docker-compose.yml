@@ -1,0 +1,30 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - progresDB:/data/postgres
+    env_file:
+      - ./currensee-api/.env.prod
+
+  app:
+    restart: always
+    build: ./currensee-api
+    env_file:
+      - ./currensee-api/.env.prod
+    ports:
+      - 3005:3005
+    volumes:
+      - ./:/code
+
+  frontend:
+    build: ./currensee-client
+    ports:
+      - 3000:80
+
+volumes:
+  progresDB:

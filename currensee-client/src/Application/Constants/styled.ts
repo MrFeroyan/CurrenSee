@@ -1,0 +1,8 @@
+export const HEADER_HEIGHT = '80px'
+export const SUB_HEADER_HEIGHT = '60px'
+export const BOX_BORDER = '1px solid #ccc'
+export const INPUT_HEIGHT = '56px'
+export const INPUT_FONT_SIZE = '16px'
+export const DROPDOWN_WIDTH = '400px'
+export const INPUT_WIDTH = '150px'
+export const CONTENT_HEIGHT = '450px'
